@@ -1,8 +1,7 @@
 name: Code Review
 
 on:
-  pull_request:
-    branches: [ main ]
+  pull_request:  # 对任何分支的 PR 都会触发工作流
 
 jobs:
   review:
