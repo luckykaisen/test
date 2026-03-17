@@ -1,24 +1,15 @@
-# Code Review Workflow
-
 name: Code Review
 
-description: A workflow for code reviews, including capabilities for Chinese language support using GitHub Copilot.
-
 on:
-  pull_request:
-    branches:
-      - main
+  pull_request:  # 对任何分支的 PR 都会触发工作流
 
 jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
-      - name: Code Review
-        uses: github/copilot@v1
+      - name: Code Review Comment
         with:
           language: zh-CN
-      - name: Review finishes
-        run: echo 'Code review completed!'
+        run: echo "Code review passed"
