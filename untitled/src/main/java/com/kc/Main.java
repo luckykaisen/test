@@ -19,5 +19,7 @@ public class Main {
 
     public static void main(String[] args) {
         buildPattern(new String[]{});
+
+        System.out.println(1 / 0);
     }
 }
