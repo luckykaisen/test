@@ -23,5 +23,8 @@ public class Main {
         String s = null;
 
         System.out.println(s.length());
+
+        Integer i = null;
+        System.out.println(i.byteValue());
     }
 }
