@@ -28,8 +28,6 @@ public class Main {
         System.out.println(i.byteValue());
 
         Double d = null;
-        if (d != null) {
-            System.out.println(d.byteValue());
-        }
+        System.out.println(d.byteValue());
     }
 }
