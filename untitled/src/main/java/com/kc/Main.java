@@ -26,5 +26,8 @@ public class Main {
 
         Integer i = null;
         System.out.println(i.byteValue());
+
+        Double d = null;
+        System.out.println(d.byteValue());
     }
 }
